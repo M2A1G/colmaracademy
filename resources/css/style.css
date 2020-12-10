@@ -35,6 +35,10 @@ header {
     align-items: center;
 }
 
+.logo p {
+    font-weight: normal;
+}
+
 .logo span {
     font-weight: bold;
 }
