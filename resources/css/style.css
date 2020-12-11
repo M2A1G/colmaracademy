@@ -8,14 +8,24 @@ body {
     display: flex;
     align-items: center;
 }
+a {
+    text-decoration: none;
+    color: rgb(82, 164, 231);
+}
+
 
 h2 {
     font-size: 3rem;
     font-weight: 900;
 }
+
+h3 {
+    font-size: 2rem;
+    font-weight: 900;
+}
 p {
-    font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1rem;;
+    font-weight: normal;
 }
 
 header {
@@ -51,7 +61,6 @@ nav span {
 }
 
 nav span a {
-    text-decoration: none;
     font-size: 0.9rem;
     color: rgb(71, 71, 71);
 }
@@ -62,8 +71,15 @@ nav span a {
     margin: auto;
 }
 
+/*banner*/
+
 .banner {
     background-color: silver;
+}
+
+.banner p {
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .banner .img-container{
@@ -75,12 +91,89 @@ nav span a {
     width: 100%;
 }
 
-.banner .learn {
-}
-
 .banner .learn .button {
+    width: 100%;
     background-color: rgb(71, 71, 71);
     padding: 1rem;
     color: white;
     text-align: center;
 }
+
+/*information*/
+
+.information .left {
+    width: 60%;
+    padding: 32px 24px;
+    border-right: 1px solid silver;
+}
+.information p {
+    font-size: 1rem;;
+    font-weight: normal;
+}
+
+.information h4 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.information  p {
+    margin: 4px 0 8px 0;
+}
+.information img {
+    width: 100%;
+}
+
+.information .right {
+    width: 40%;
+}
+.information .right .mini-img {
+    width: 35%;
+    margin: 16px;
+}
+
+.information .row {
+    border-bottom: 1px solid silver;
+    align-items: center;
+}
+
+.row.silver.flex-container {
+    background-color: silver;
+}
+
+/*grid*/
+.learning {
+    background-color: silver;
+}
+
+.learning h3 {
+    text-align: center;
+    margin-top: 0;
+    padding: 32px;
+}
+.learning .grid-container {
+    padding: 0 72px 32px 72px;
+}
+
+.learning .box {
+    flex-direction: column;
+    background-color: white;
+    align-items: flex-start;
+}
+
+.learning .box img {
+    width: 100%;
+}
+.learning .box .content {
+    padding: 24px 16px;
+}
+
+.learning .grid {
+    display: grid;
+    width: 100%;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    grid-gap: 32px 32px;
+}
+
+
+
+
