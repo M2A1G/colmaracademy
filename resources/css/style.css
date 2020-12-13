@@ -20,12 +20,24 @@ h2 {
 }
 
 h3 {
+    text-align: center;
     font-size: 2rem;
     font-weight: 900;
 }
+h4 {
+    margin: 8px 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
 p {
-    font-size: 1rem;;
+    margin: 8px 0;
+    font-size: 1.2rem;;
     font-weight: normal;
+    line-height: 1.4;
+}
+.heading {
+    margin-top: 0;
+    padding: 32px;
 }
 
 header {
@@ -52,6 +64,9 @@ header {
 .logo span {
     font-weight: bold;
 }
+nav img {
+    display: none;
+}
 
 nav {
     padding-right: 16px;
@@ -77,79 +92,62 @@ nav span a {
     background-color: silver;
 }
 
-.banner p {
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-.banner .img-container{
-    width: 60%;
-    padding: 32px 24px;
-
-}
-.banner .img-container img {
-    width: 100%;
-}
-
-.banner .learn .button {
-    width: 100%;
+.banner .button {
+    margin-top: 32px;
+    width: 66%;
     background-color: rgb(71, 71, 71);
     padding: 1rem;
     color: white;
     text-align: center;
 }
 
-/*information*/
-
-.information .left {
+/*information and thesis*/
+.left {
     width: 60%;
     padding: 32px 24px;
+}
+.information .left {
     border-right: 1px solid silver;
 }
-.information p {
-    font-size: 1rem;;
-    font-weight: normal;
-}
 
-.information h4 {
-    font-size: 1.5rem;
-    margin-top: 0;
-    margin-bottom: 4px;
-}
-.information  p {
-    margin: 4px 0 8px 0;
-}
-.information img {
+.left .media-container img, .left .media-container video {
     width: 100%;
 }
 
-.information .right {
+.right {
     width: 40%;
 }
-.information .right .mini-img {
+
+.information .right .row {
+    border-bottom: 1px solid silver;
+}
+
+.information h3 {
+    text-align: left;
+}
+
+.right .row .mini-img {
     width: 35%;
     margin: 16px;
 }
-
-.information .row {
-    border-bottom: 1px solid silver;
-    align-items: center;
+.right .row .content {
+    width: 65%;
 }
 
-.row.silver.flex-container {
+.right .row .mini-img img {
+    width: 100%;
+}
+
+.right .row.silver.flex-container {
     background-color: silver;
 }
+
 
 /*grid*/
 .learning {
     background-color: silver;
 }
 
-.learning h3 {
-    text-align: center;
-    margin-top: 0;
-    padding: 32px;
-}
 .learning .grid-container {
     padding: 0 72px 32px 72px;
 }
@@ -174,6 +172,88 @@ nav span a {
     grid-gap: 32px 32px;
 }
 
+/*thesis*/
+.thesis {
+    align-items: flex-start;
+    border-bottom: 1px solid silver;
+}
+
+.thesis .right {
+    position: relative;
+    top: 32px;
+}
+
+/*footer*/
+
+footer {
+    position: relative;
+    top: 66px;
+    justify-content: space-between;
+}
+
+footer h6 {
+    padding: 16px 24px;
+}
+
+@media only screen and (max-width: 480px){
+* {
+    max-width: 480px;
+}
+.main .flex-container {
+    flex-direction: column;
+}
+
+/*header*/
+
+header {
+    justify-content: space-around;
+}
+
+header .logo p {
+    display: none;
+}
+
+header nav img {
+    display: inherit;
+}
+header nav a {
+    display: none;
+}
+
+/*banner*/
+.left, .right {
+    width: 100%
+}
+
+/*information*/
+
+.information .left {
+    display: none;
+}
+.information .row.silver.flex-container,{
+    background-color: white;
+}
+
+/*grid*/
+
+.learning {
+    background-color: white;
+}
+
+.learning .grid {
+    grid-template: repeat(6, 1fr) / 1fr;
+}
+
+/*thesis*/
+
+.thesis .right, .thesis .left .content {
+    display: none;
+}
 
 
+
+
+
+
+}
 
