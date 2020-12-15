@@ -118,6 +118,10 @@ nav span a {
     width: 40%;
 }
 
+.information .right {
+    padding-top: 16px;
+}
+
 .information .right .row {
     border-bottom: 1px solid silver;
 }
@@ -126,12 +130,20 @@ nav span a {
     text-align: left;
 }
 
+.information {
+    align-items: flex-start;
+}
+
 .right .row .mini-img {
     width: 35%;
     margin: 16px;
 }
 .right .row .content {
     width: 65%;
+}
+
+.right .row .mini-img.mobile {
+    display: none;
 }
 
 .right .row .mini-img img {
@@ -224,14 +236,34 @@ header nav a {
 .left, .right {
     width: 100%
 }
+.banner .right .learn {
+    text-align: center;
+}
+
+.banner .right .learn .button {
+    margin: auto;
+}
+
 
 /*information*/
 
 .information .left {
     display: none;
 }
+
+.right .row.silver.flex-container {
+    background-color: white;
+}
+
 .information .row.silver.flex-container,{
     background-color: white;
+}
+.information .right .row .mini-img {
+    display: none;
+    width: 100%;
+}
+.information .right .row .mini-img.mobile {
+    display: inherit;
 }
 
 /*grid*/
@@ -242,6 +274,16 @@ header nav a {
 
 .learning .grid {
     grid-template: repeat(6, 1fr) / 1fr;
+    grid-row-gap: 8px;
+}
+
+.learning .grid .box {
+    background-color: silver;
+    justify-content: center;
+}
+
+.learning .grid .box img , .learning .grid .box p {
+    display: none;
 }
 
 /*thesis*/
@@ -249,11 +291,12 @@ header nav a {
 .thesis .right, .thesis .left .content {
     display: none;
 }
+.thesis .left {
+    padding: 16px 0 24px 0;
+}
 
-
-
-
-
-
+/*footer*/
+footer nav {
+    display: none;
 }
 
